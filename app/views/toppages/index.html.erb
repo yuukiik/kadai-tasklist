@@ -1,0 +1,13 @@
+<% if logged_in? %>
+
+<%= current_user.name %>
+
+<% else %>
+
+<div class="center">
+  <div class="text-center">
+    <%= link_to 'Sing up now!', signup_path, class: 'btn btn-lg btn-primary' %>
+  </div>
+</div>
+
+<% end %>
